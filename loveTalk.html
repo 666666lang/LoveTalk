@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>土味情话</title>
+    <script>
+        $.get("https://v1.alapi.cn/api/qinghua", function (data, status) {
+            document.getElementById("p1").innerHTML = data.data.content;
+        });
+        $(document).ready(function () {
+            $("a").click(function () {
+                $.get("https://v1.alapi.cn/api/qinghua", function (data, status) {
+                    document.getElementById("p1").innerHTML = data.data.content;
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="father">
+        <div class="head">
+            <div class="title">土味情话</div>
+        </div>
+        <div class="content">
+            <p id="p1">未注册用户每天最多请求100次，请升级付费套餐</p>
+        </div>
+        <div class="footer">
+            <a href="#" id="link">再讲一句</a>
+        </div>
+    </div>
+</body>
+
+</html>

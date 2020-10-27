@@ -1,0 +1,41 @@
+.father{
+    margin:0;
+    padding:0;
+}
+.head{
+    height: 145px;
+}
+.title{
+    padding:26px;
+    margin-left: 220px;
+    font-weight: 700;
+    font-size: 26px;
+    color: #FFC0CB;
+}
+.content{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#p1{
+    font-size: 30px;
+    font-weight: 500;
+}
+.footer{
+    height: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    width:150px;
+    height:60px;
+    text-align:center;
+    line-height:60px;
+    color:white;
+    text-decoration-line: none;
+    border-radius: 50px;
+    background:  #FFC0CB;
+    background-size:400%;
+}
